@@ -1,0 +1,14 @@
+PROJECT TITLE
+My Responsive Web Design Portfolio – Coded from Scratch
+
+PROJECT DESCRIPTION (edit to describe the work you personally completed)
+This project is a responsive portfolio website developed with HTML5, CSS3, and JavaScript. It demonstrates a homepage, an About section, three clearly labeled practice project concepts, a Skills section, an interactive features section, and contact information.
+
+The site uses semantic HTML and custom CSS with Grid, Flexbox, and media queries. I tested how the layout adapts to desktop and mobile screens.
+
+The demonstration includes five additional features: a responsive mobile navigation menu, a light/dark theme toggle, category filters for portfolio projects, a back-to-top button, and expandable FAQ panels.
+
+The attached screenshots show the desktop and mobile layouts. The HTML, CSS, and JavaScript source files are included in the project folder.
+
+IMPORTANT
+This is an AI-assisted sample project; adapt it and only describe testing/validation you personally completed. Check W3C validation yourself before stating it passes. Replace placeholder contact details and template text. Add your actual live website URL if you publish it.

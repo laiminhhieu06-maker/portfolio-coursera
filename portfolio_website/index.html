@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A responsive web design portfolio demo made with HTML, CSS, and JavaScript from scratch.">
+  <meta name="theme-color" content="#f6f7fb">
+  <title>My Portfolio | Web Design Capstone</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a href="#top" class="logo" aria-label="My Portfolio home"><span class="logo-mark">&lt;/&gt;</span> My<span class="logo-accent">Portfolio</span></a>
+      <nav class="nav" id="primary-navigation" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" id="theme-toggle" aria-label="Switch to dark theme" title="Toggle theme"><span aria-hidden="true" id="theme-icon">☾</span></button>
+        <button class="menu-toggle" type="button" id="menu-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="status-dot"></span> WEB DESIGN CAPSTONE · PORTFOLIO DEMO</div>
+          <h1 id="hero-title">Thoughtful design.<br><span class="gradient-text">Built for the web.</span></h1>
+          <p class="hero-lead">Hi! I'm a web design student learning to create responsive, accessible, and engaging websites using HTML, CSS, and JavaScript.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore my projects <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="#about">More about me</a>
+          </div>
+          <div class="hero-stats" aria-label="Portfolio highlights">
+            <div><strong>03</strong><span>Design concepts</span></div>
+            <div><strong>100%</strong><span>Responsive focus</span></div>
+            <div><strong>04+</strong><span>Interactive features</span></div>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Illustration of a responsive website design">
+          <div class="art-glow art-glow-one"></div><div class="art-glow art-glow-two"></div>
+          <div class="mock-browser">
+            <div class="browser-top"><span class="browser-dots"><i></i><i></i><i></i></span><span class="browser-url">my-portfolio.example</span></div>
+            <div class="browser-content">
+              <div class="mock-sidebar"><div class="mock-avatar"></div><b></b><i></i><i></i><i></i></div>
+              <div class="mock-body"><span class="tiny-label">DESIGN · CREATE · INSPIRE</span><div class="mock-headline"></div><div class="mock-headline short"></div><div class="mock-line"></div><div class="mock-line small"></div><div class="mock-pill"></div><div class="mock-cards"><i></i><i></i><i></i></div></div>
+            </div>
+          </div>
+          <div class="mock-phone"><div class="phone-notch"></div><div class="phone-screen"><span class="phone-top">≡</span><div class="phone-image"></div><div class="phone-line"></div><div class="phone-line short"></div><div class="phone-card"></div><div class="phone-card"></div></div></div>
+          <div class="floating-note"><span class="floating-icon">✦</span><div><strong>Responsive first</strong><small>Desktop + Mobile</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about" aria-labelledby="about-heading">
+      <div class="container about-layout">
+        <div class="section-heading"><p class="kicker">01 / ABOUT</p><h2 id="about-heading">Learning by <span>building.</span></h2></div>
+        <div class="about-body"><p>I enjoy turning ideas into clear and functional web experiences. This portfolio is a course demonstration developed from scratch, with a focus on clean code, user-friendly layouts, and responsive behavior across devices.</p><p>Each project below is a <strong>practice concept</strong>, designed to demonstrate layout, styling, and interaction skills—not a claim of commissioned client work.</p><a class="text-link" href="#skills">See the skills I'm practicing <span aria-hidden="true">→</span></a></div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-top"><div><p class="kicker">02 / SELECTED WORK</p><h2 id="projects-heading">A few things <span>I've designed.</span></h2><p class="section-subtext">Sample concepts created for learning and portfolio practice.</p></div><div class="filter-wrap" role="group" aria-label="Filter projects"><button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All projects</button><button class="filter-button" type="button" data-filter="business" aria-pressed="false">Business</button><button class="filter-button" type="button" data-filter="creative" aria-pressed="false">Creative</button></div></div>
+        <div class="project-grid" id="project-grid">
+          <article class="project-card" data-category="business">
+            <div class="project-image flooring-art" role="img" aria-label="Illustrated concept of a modern flooring services website"><div class="flooring-window"><span>FLOOREVER</span><b>Beautiful spaces<br>start below.</b><i>FLOORING &amp; RENOVATION</i><em>GET A QUOTE ↗</em></div><div class="floorboards"></div></div>
+            <div class="project-info"><div class="project-label"><span>BUSINESS WEBSITE</span><span>01</span></div><h3>Floorever</h3><p>A home renovation and flooring website concept with clear service cards and prominent calls to action.</p><div class="tags"><span>Responsive</span><span>HTML/CSS</span></div></div>
+          </article>
+          <article class="project-card" data-category="creative">
+            <div class="project-image cafe-art" role="img" aria-label="Illustrated concept of a café landing page"><div class="cafe-circle circle-one"></div><div class="cafe-circle circle-two"></div><div class="cafe-copy"><small>THE DAILY CUP</small><strong>Good coffee.<br>Great moments.</strong><em>Explore the menu ↗</em></div><div class="coffee-cup"><div class="cup-handle"></div><div class="cup-body"></div><div class="cup-saucer"></div></div></div>
+            <div class="project-info"><div class="project-label"><span>LANDING PAGE</span><span>02</span></div><h3>The Daily Cup</h3><p>A welcoming café concept with warm colors, a readable content hierarchy, and strong visual focus.</p><div class="tags"><span>Visual design</span><span>Layout</span></div></div>
+          </article>
+          <article class="project-card" data-category="creative">
+            <div class="project-image event-art" role="img" aria-label="Illustrated concept of a creative workshop event site"><div class="event-orbit orbit-one"></div><div class="event-orbit orbit-two"></div><div class="event-number">03</div><div class="event-copy"><small>DESIGN WORKSHOP</small><strong>Create<br>something<br>new.</strong><span>LEARN · MAKE · SHARE</span></div></div>
+            <div class="project-info"><div class="project-label"><span>EVENT CONCEPT</span><span>03</span></div><h3>Creative Workshop</h3><p>A colorful event page concept designed around bold typography, section contrast, and intuitive navigation.</p><div class="tags"><span>CSS styling</span><span>Mobile first</span></div></div>
+          </article>
+        </div>
+        <p class="filter-status" id="filter-status" role="status" aria-live="polite">Showing 3 projects</p>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills" aria-labelledby="skills-heading">
+      <div class="container skills-layout"><div><p class="kicker">03 / WHAT I'M LEARNING</p><h2 id="skills-heading">Skills behind <span>the screens.</span></h2><p class="section-subtext">Building better habits one project at a time.</p></div><div class="skill-grid"><div class="skill-item"><span class="skill-icon">&lt;&gt;</span><div><h3>Semantic HTML5</h3><p>Meaningful structure, headings, forms, and accessibility.</p></div></div><div class="skill-item"><span class="skill-icon">#</span><div><h3>Modern CSS3</h3><p>Grid, Flexbox, custom properties, and visual hierarchy.</p></div></div><div class="skill-item"><span class="skill-icon">{ }</span><div><h3>JavaScript</h3><p>Interactive menus, theme switching, and project filtering.</p></div></div><div class="skill-item"><span class="skill-icon">↔</span><div><h3>Responsive design</h3><p>Layouts that adapt to desktop, tablet, and mobile widths.</p></div></div></div></div>
+    </section>
+
+    <section class="section extras-section" id="features" aria-labelledby="features-heading"><div class="container"><p class="kicker">04 / EXTRA FEATURES</p><h2 id="features-heading">Built to do <span>more.</span></h2><div class="feature-list"><div><span>01</span><strong>Responsive mobile navigation</strong><p>Open and close the menu on small screens.</p></div><div><span>02</span><strong>Light / dark theme</strong><p>Switch themes with the moon/sun button.</p></div><div><span>03</span><strong>Project category filters</strong><p>Explore business or creative project cards.</p></div><div><span>04</span><strong>Back-to-top button</strong><p>Return to the beginning after scrolling.</p></div><div><span>05</span><strong>Expandable FAQ</strong><p>Read answers using accessible native disclosure panels.</p></div></div></div></section>
+
+    <section class="section faq-section" aria-labelledby="faq-heading"><div class="container faq-layout"><div><p class="kicker">05 / COMMON QUESTIONS</p><h2 id="faq-heading">A little more <span>detail.</span></h2></div><div class="faq-list"><details><summary>Was this website coded from scratch?</summary><p>Yes. The demonstration uses original HTML, CSS, and JavaScript files, without a site builder, CSS framework, or external package.</p></details><details><summary>Does the layout work on mobile?</summary><p>Yes. Flexible CSS layouts and media queries adapt the navigation, grids, and text spacing to smaller screens.</p></details><details><summary>What is the purpose of this portfolio?</summary><p>It demonstrates foundational web design skills and serves as a starting point that can be customized with genuine student projects.</p></details></div></div></section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-heading"><div class="container contact-inner"><div><p class="kicker">LET'S CONNECT</p><h2 id="contact-heading">Every good idea starts <span>somewhere.</span></h2><p>This is a demonstration portfolio. Replace this message with your own contact details before publishing.</p></div><a class="button button-white" href="mailto:your-email@example.com?subject=Hello%20from%20your%20portfolio">Email me <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><span class="footer-brand">&lt;/&gt; MyPortfolio</span><p>Handcrafted with HTML, CSS &amp; JavaScript · <span id="year">2026</span></p><a href="#top">Back to top ↑</a></div></footer>
+  <a href="#top" class="back-to-top" id="back-to-top" aria-label="Back to top">↑</a>
+</body>
+</html>
